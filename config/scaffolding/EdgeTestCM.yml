@@ -8,3 +8,9 @@ packages:
   gitUsername: AvudaiSelvi
   gitToken: edge.scaffolding.EdgeTestCM.TestCM.gitToken
   gitBranch: main
+- name: GP01_OrderManagement
+  gitServerName: kalpshekhar-sag
+  gitUrl: https://github.com/SoftwareAG
+  gitUsername: kalpshekhar-sag
+  gitToken: edge.scaffolding.GP01_OrderManagement.kalpshekhar-sag.gitToken
+  gitBranch: master

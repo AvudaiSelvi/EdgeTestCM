@@ -1,0 +1,10 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: EdgeTestCM
+  gitServerName: TestCM
+  gitUrl: https://github.com/AvudaiSelvi/EdgeTestCM
+  gitUsername: AvudaiSelvi
+  gitToken: edge.scaffolding.EdgeTestCM.TestCM.gitToken
+  gitBranch: main

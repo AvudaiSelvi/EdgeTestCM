@@ -1,6 +1,61 @@
 version: "1.0"
 info:
   model: int-scaffold
+services:
+- serviceName: edge.testcm.integrations:generateQuotation
+  packages:
+  - name: EdgeTestCM
+    version: "1.0"
+  - name: GP01_OrderManagement
+    version: "1.0"
+- serviceName: gp.order.management.services:generateQuote
+  packages:
+  - name: GP01_OrderManagement
+    version: "1.0"
+- serviceName: gp.order.management.appsim:getCustomerById
+  packages:
+  - name: GP01_OrderManagement
+    version: "1.0"
+- serviceName: pub.client:http
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
+- serviceName: pub.json:jsonStringToDocument
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
+- serviceName: gp.order.management.appsim:getProductById
+  packages:
+  - name: GP01_OrderManagement
+    version: "1.0"
+- serviceName: pub.string:isNumber
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
+- serviceName: pub.math:multiplyFloats
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
+- serviceName: pub.math:subtractFloats
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
+- serviceName: pub.date:currentNanoTime
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
+- serviceName: pub.flow:getLastError
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
+- serviceName: pub.flow:clearPipeline
+  packages:
+  - name: WmPublic
+    version: 11.0.0.0.560
 packages:
 - name: EdgeTestCM
   gitServerName: TestCM
